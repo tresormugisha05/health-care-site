@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Products</title>
+    <style>
+        body {
+            background-color: #fde2e2; /* Light red/pink */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #a4161a;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 2rem;
+        }
+        .verify-box {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 2rem auto;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+        input, button {
+            width: 100%;
+            padding: 0.8rem;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+        button {
+            background: #a4161a;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        #root{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Book Appointments & Verify Products</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contacts</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Check Product Authenticity or book your appointment</h2>
+    <button id="FormDisplay">Click me for an appointment fill.</button>
+    <form id="root">
+        <label>
+            <p>Enter your full name:</p>
+            <input type="text" id="FullName"required/>
+        </label>
+        <label>
+            <p>Enter your contact:</p>
+            <input type="tel" id="Phone"required/>
+        </label>
+        <label>
+            <p>What’s your main health goal right now?</p><br>
+            <input type="text" placeholder="staying fit, managing a condition, getting regular checkups"><br>
+        </label>
+        <label>
+            <p>Do you prefer in-person or virtual consultations?</p><br>
+            <input type="text" placeholder="virtual, in-person"required><br>
+        </label>
+        <label>
+            <p>What’s your preferred appointment time?</p><br>
+            <input type="text"placeholder="Morning / Afternoon / Evening"required><br>
+        </label>
+        <label>
+            <p>Do you need a male, female, or any doctor could help you??</p>
+            <input type="text"placeholder="male/female/anyone"required>
+        </label>
+        <button type="submit" id="SubmitApp">Book Appointment</button>
+    </form>
+    <main id="WhatToExpect"></main>
+    <section class="verify-box">
+        <p>Enter the product code below to verify if it is genuine:</p>
+        <input type="text" placeholder="Enter Product Code">
+        <button>Verify Now</button>
+    </section>
+</main>
+<script>
+    const formAction = document.getElementById("FormDisplay")
+    let number = 0;
+    const form=document.getElementById("root")
+    const message=document.getElementById("WhatToExpect")
+    formAction.addEventListener("click",function ToggleFormAction(){
+        number = number === 0 ? 1 : 0;
+        form.style.display = number===1 ? "block": "none";
+    })
+    form.addEventListener("submit",function ToggleForm(event){
+        event.preventDefault();
+        number = 0;
+        form.style.display = "none";
+        number = 0;
+        message.innerHTML=`<p>Thank you for reaching out that was the hard part now 
+                            you should expect a call from our hosiptal letting you know
+                             the following steps,have a blessed day wishing you a speedy recovery"</p>`
+    })
+</script>
+</body>
+</html>
