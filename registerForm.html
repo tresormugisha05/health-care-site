@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./src/App.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>start</title>
+  </head>
+  <body>
+    <div class="divReg">
+  <h1>start your journey to a perfect life!</h1>
+    <form id="signUp"class="signUp">
+    <label><p>firstname:</p><input type="text"id="firstname"required></label><br>
+    <label><p>surname:</p><input type="text"id="surname"required></label><br>
+    <label><p>Gender:</p>
+    
+    </label><br>
+    <label><p>date of  birth:</p><input type="date"id="dateOfBirth"required></label><br>
+    <label><p>Email:</p><input type="email" id="email"required></label><br>
+    <label><p>phone number:</p><input type="tel"id="phone"required></label><br>
+    <main>
+        <label><p>What’s your main health goal right now?</p></label><br>
+    <input type="text" placeholder="staying fit, managing a condition, getting regular checkups"><br>
+    <label><p>Do you prefer in-person or virtual consultations?</p></label><br>
+    <input type="text" placeholder="virtual, in-person"><br>
+    <label><p>What’s your preferred appointment time?</p></label><br>
+    <input type="text"placeholder="Morning / Afternoon / Evening"><br>
+    </main>
+    <label><p>password:</p><input id="firstTry"type="password"required></label><br>
+    <label><p>confirm password:</p><input  id="password" type="password"required></label><br>
+    <p id="error"></p><br>
+    <button type="submit" id="btnEl">sign up</button>
+    </form>
+    </div>
+    <script>
+     const root=document.getElementById("signUp");
+     const firstTry=document.getElementById("firstTry").value;
+     const secondTry=document.getElementById("password").value;
+     const errorMessage=document.getElementById("error");
+     root.addEventListener("submit",function(event){
+      event.preventDefault();
+
+      if (firstTry !==secondTry){
+               errorMessage.textContent="you have made a mistake! re check your passwords before signing up!!"
+
+      }
+      else{
+         window.location.href="index.html"
+              }
+     })
+    </script>
+  </body>
+</html>
