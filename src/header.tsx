@@ -1,4 +1,4 @@
-import logo from "./photos/logo.jpg" 
+import logo from "./photos/logo.jpg"
  function Header(){
     return(
         <main className="HeaderC">

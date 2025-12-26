@@ -1,314 +1,412 @@
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
+html, body{
+    width: 100%;
+    overflow-x: hidden;
 }
-
-.div1 {
-  width: 100%;
-  min-height: 100vh;
+.div1{
+   width: 100%;
+  height: 100vh;
   display: grid;
   align-items: center;
   justify-content: center;
 }
-
-.HeaderC {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  backdrop-filter: blur(10px);
-  box-shadow: 0px 4px rgba(0,0,0,0.1);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  gap: 20px;
-  font-weight: 50;
-  justify-content: center;
+.HeaderC{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    backdrop-filter: blur(10px);
+    box-shadow:0px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    font-weight: 50;
+    justify-content: center;
 }
-
-.HeaderC>a {
-  text-decoration: none;
-  color: white;
-  font-size: larger;
-  font-weight: bold;
+.HeaderC>a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
 }
+.HeaderC>div>img{
+    border-radius: 30px;
 
-.HeaderC>div>img {
-  border-radius: 30px;
-  width: 30px;
-  height: 20px;
 }
-
-.HeaderC>button {
-  border: none;
-  background-color: cadetblue;
-  width: 90px;
-  height: 60px;
-  border-radius: 20px;
-  font-weight: bold;
+.HeaderC>button{
+    border: none;
+    background-color: cadetblue;
+    width: 90px;
+    height: 60px;
+    border-radius: 20px;
+    font-weight: bold;
 }
-
-.HeaderC>button:hover {
-  background-color: darkgray;
+.HeaderC>button:hover{
+    background-color: darkgray;
 }
-
-.HeaderC>div {
-  margin-right: auto;
-  padding-right: 50px;
-  display: flex;
-  align-items: center;
+.HeaderC>div{
+    margin-right: auto;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
 }
-
-.main1 {
-  display: flex;
-  gap: 40px;
+.HeaderC>div>img{
+    width: 30px;
+    height: 20px;
 }
-
-.prohealth {
-  text-decoration: underline;
+.main1{
+    display: flex;
+    gap: 40px;
 }
-
-.prohealth1 {
-  font-weight: 800;
-  font-size: larger;
+.prohealth{
+    text-decoration: underline;
 }
-
-.Div2>ul {
-  font-weight: bold;
-  font-size: 1.2rem;
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(6px);
-  padding: 30px;
-  gap: 40px;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.prohealth1{
+    font-weight: 800px;
+    font-size: larger;
 }
+.Div2>ul{
+    font-weight: bold;
+    font-size: 1.2rem;
+    justify-content: left;
+    font-size: larger;
+    border-radius: 15px;
+    background-color:  rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    padding: 30px;
+    gap: 120px;
+    list-style: none;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 
-.div1>h1 {
-  margin-top: 200px;
-  margin-left: 50px;
 }
-
-.main0 {
-  background-image: url('./photos/photo15.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+.div1>h1{
+    margin-top: 200px;
+    margin-left: 50px;
 }
-
-.main2 {
-  color: cadetblue;
-  padding: 40px;
-  gap: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  align-items: center;
-  width: 100%;
-  background-color: #F0F8FF;
+.main0{
+    background-image: url('./photos/photo15.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
-
-.main2>main>p {
-  color: black;
-  font-size: larger;
-  font-weight: 500;
-  font-style: italic;
+.main2{
+    color: cadetblue;
+    padding: 100px;
+    gap: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+    background-color: #F0F8FF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
 }
-
-.main2>img {
-  margin-left: 0;
-  max-width: 100%;
-  height: auto;
-  border-radius: 30px;
+.main2>main>p{
+    color:black;
+    font-size: larger;
+    font-weight: 500;
+    font-style: italic;
 }
-
-.main2>h2 {
-  color: cornflowerblue;
+.main2>img{
+    display: grid;
+    justify-content: right;
+    margin-left: 200px;
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
 }
-
-.main2>h1 {
-  color: slategrey;
+.main2>h2{
+    color: cornflowerblue;
 }
-
-.main2>p {
-  font-size: larger;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.main2>h1{
+    color: slategrey;
 }
-
-.div3 {
-  background-color: antiquewhite;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+.main2>p{
+    font-size: larger;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
-.div3>img {
-  margin: 20px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 30px;
+.div3{
+    background-color: antiquewhite;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
 }
-
-.div3>main>main {
-  display: grid;
-  justify-content: center;
-  padding: 20px;
-  color: cadetblue;
+.div3>img{
+    margin-right: 120px;
+    margin-top: 80px;
+    width: 600px;
+    height: 500px;
+    border-radius: 30px;
 }
-
-.div3>main>main>p {
-  font-size: larger;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-left: 20px;
+.div3>main>main{
+    display: grid;
+ justify-content: center;
+ padding: 20px;
+ color: cadetblue;
 }
-
-.div3>main>div>div>button {
-  background-color: cadetblue;
-  border: none;
-  margin: 20px;
-  font-size: 1rem;
-  color: aliceblue;
-  box-shadow: 0 4px 8px;
-  border-radius: 20px;
-  width: 100%;
-  max-width: 200px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: left;
+.div3>main>main>p{
+ font-size: larger;
+ font-family: Arial, Helvetica, sans-serif;
+ padding-left: 60px;
 }
-
+.div3>main>div>div>button{
+    background-color:cadetblue;
+    border: none;
+    margin: 30px;
+    font-size: 20px;
+    color: aliceblue;
+    box-shadow: 0 4px 8px;
+    border-radius: 20px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: left;
+}
 .div3>main>div>div>button:hover {
-  background-color: dimgray;
+  background-color:dimgray;
 }
-
-.div3>main>div>div>button>img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+.div3>main>div>div>button>img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
-
-.div3>main>div {
+.div3>main>div{
+    display: flex;
+}
+.div4{
+    background-image: url("./photos/photo1.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    color:black;
+    display:grid;
+    justify-content: right;
+    align-items: top;
+}
+.div4>main{
+    margin-right: 200px;
+}
+.div4>main>p{
+    position: absolute;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div4>main>h1{
+    margin-top: 100px;
+}
+.div5{
+    background-color: darkgray;
+}
+.div5>main{
+    display: grid;
+    justify-content: center;
+    color: white;
+}
+.div5>main>p{
+    font-size: larger;
+    font-weight: 500;
+    padding: 40px;
+}
+.div5>div{
+    display:flex;
+}
+.article>img{
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 280px;
+}
+.article:hover{
+    background-color: skyblue;
+}
+.article{
+        background-color: whitesmoke;
+        border-radius: 30px;
+        margin: 40px;
+        box-shadow: 0 15px 10px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+}
+.article>main>p{
+    padding: 40px;
+    font-size: larger;
+    font-weight:500;
+}
+.article>h2{
+    margin-left: 30px;
+}
+.div7{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./photos/photo21.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:cadetblue;
+    display:grid;
+    justify-content: left;
+    align-items: center;
+}
+.div7>h1{
+    margin-left: 60px;
+    margin-top: 250px;
+}
+.div7>p{
+    margin-left: 60px;
+    font-size: larger;
+}
+.div7>button{
+    margin-left:100px ;
+    background-color:cadetblue;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    color:white;
+    font-size:medium;
+}
+.div8{
+    width:100vw;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+}
+.div8>main>ul>li>img{
+    width: 30px;
+    height: 20px;
+    border-radius: 10px;
+}
+.div8>main>ul{
+    list-style: none;
+}
+.div8>main>ul>li{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.questions{
+      width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.question1{
+    font-size: larger;
+    font-weight: 400;
+    background-color: #f0f8ff; /* light blue background */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   display: flex;
-  flex-wrap: wrap;
-}
-
-.article {
-  background-color: whitesmoke;
-  border-radius: 30px;
-  margin: 20px;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 0 15px 10px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  max-width: 500px;
 }
-
-.article>img {
-  margin-top: 20px;
-  border-radius: 15px;
-  max-width: 100%;
-  height: auto;
+.question1:hover {
+  background-color: #e6f2ff;
 }
-
-.article:hover {
-  background-color: skyblue;
+.signUp{
+    display: grid;
+    width: 50vw;
+    border-radius: 20px;
+    box-shadow: 0 30px 10px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+    background-color:oldlace;
+    padding: 40px;
 }
-
-.article>main>p {
-  padding: 20px;
-  font-size: larger;
-  font-weight: 500;
+.divReg{
+    display: grid;
+    justify-content: center;
 }
-
-.article>h2 {
-  margin-left: 20px;
+.divReg>h1{
+    color:cadetblue;
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 80px;
 }
-
-.signUp {
-  display: grid;
-  width: 90%;
-  max-width: 600px;
-  border-radius: 20px;
-  box-shadow: 0 30px 10px rgba(0,0,0,0.1);
-  justify-content: center;
-  align-items: center;
-  background-color: oldlace;
-  padding: 20px;
+.signUp>label{
+    display: flex ;
+    align-items: center;
 }
-
-.signUp>label {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+.signUp>label>p{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.signUp>label>input {
-  width: 100%;
-  max-width: 200px;
-  height: 40px;
-  border: darkgrey;
-  border-radius: 5px;
+.signUp>label>input{
+    width:200px;
+    height: 40px;
+    border: darkgrey;
+    border-radius: 5px;
 }
-
-#btnEl {
-  width: 100%;
-  max-width: 120px;
-  height: auto;
-  border: none;
-  border-radius: 30px;
-  color: white;
-  font-size: large;
-  font-weight: 600;
-  background-color: darkblue;
-  margin: 20px auto;
+#error{
+    color: red;
+    background-color:oldlace ;
+    border: none;
+    width: 200px;
+    height: 80px;
 }
-
-#btnEl:hover {
-  background-color: darkgray;
+#btnEl{
+    width: 120px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    background-color: darkblue;
+    margin-left: 60px;
 }
-
-/* 📱 Responsive adjustments */
+#btnEl:hover{
+    background-color: darkgray;
+}
+.signUp>main>input{
+    width: 600px;
+    height:100px;
+    border: none;
+    font-size: large;
+}
+.signUp>main>label>p{
+    font-size: larger;
+    font-weight: 500;
+}
+#foot{
+    background-color: cadetblue;
+    justify-content: right;
+    align-items: center;
+}
 @media (max-width: 768px) {
-  .HeaderC {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .main2 {
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .main2>img {
-    margin: 20px 0;
-  }
-
-  .div3 {
-    flex-direction: column;
-  }
-
-  .div3>img {
-    margin: 20px 0;
-  }
-
-  .signUp {
-    width: 95%;
-    padding: 20px;
-  }
-
-  .article {
-    width: 95%;
-  }
-}
+     .HeaderC { flex-direction: column;
+         gap: 10px; padding: 10px;
+         }
+     .main2 { flex-direction: column;
+         padding: 20px;
+          text-align: center;
+         }
+     .main2>img {
+         margin: 20px 0; 
+        }
+     .div3 {
+         flex-direction: column; 
+        }
+     .div3>img { 
+        margin: 20px 0; 
+        }
+     .signUp {
+         width: 95%;
+          padding: 20px; 
+        }
+     .article { width: 95%; } 
+    }
